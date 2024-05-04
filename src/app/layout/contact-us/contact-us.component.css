@@ -1,0 +1,97 @@
+.main-container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 576px;
+}
+
+@media only screen and (max-width: 767px) {
+    .main-container {
+
+        min-width: 320px;
+    }
+    .contactBox{
+        margin: 60px 11px;
+    }
+}
+
+.btn-clr {
+    color: #fff;
+    background-color: #314d8d;
+
+}
+
+.contactBox{
+    margin: 60px 11px;
+}
+.contactItemlist {
+    position: relative;
+    margin: 30px 0px;
+    max-width: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contactItem {
+    position: relative;
+    background-color: #ffffff;
+    padding: 15px 15px 15px 20px;
+    line-height: 1.2;
+    margin-bottom: 15px;
+}
+
+.contactItem .title {
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    display: block;
+}
+
+.contactItem a {
+    color: #000;
+    font-size: 24px;
+    font-weight: 800;
+}
+
+
+
+.contactItem.tel:before {
+    background-position: -1px -90px;
+}
+
+.contactPoints {
+    padding: 20px 0px 20px 0px;
+}
+
+
+
+
+
+.contactBox {
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 18px 60px 0px rgba(0, 0, 0, 0.05);
+    padding: 40px;
+}
+
+.contactBox h3 {
+    font-size: 32px;
+    font-weight: 800;
+    margin: 0px 0px 25px 0px;
+    padding-bottom: 15px;
+    position: relative;
+}
+
+.contactBox h3:before {
+    content: "";
+    width: 50px;
+    height: 4px;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    background: var(--red);
+}

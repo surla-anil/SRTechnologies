@@ -1,0 +1,117 @@
+.navbar {
+    
+    padding: 5px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    color: #ffffff;
+  }
+
+.toggle-button-row {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background: #fff;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 1001;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.toggle-button-row mat-icon {
+  font-size: 24px;
+  color: #008080;
+}
+
+.slide-out-panel {
+  position: fixed;
+  top: 83px;
+  left: 0;
+  bottom: 0;
+  width: 250px;
+  background: linear-gradient(to right, #27245f 0, #3c7dc1 100%);
+  transition: transform 0.3s ease-out;
+  z-index: 1000;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.slide-out-panel.slide-out {
+  transform: translateX(-100%);
+}
+
+.slide-out-content {  
+  padding: 5px;
+}
+.edit-col {
+  color: #000;
+  cursor: pointer;
+  font-size: 18px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.edit-col:hover {
+  color: #008080;
+}
+
+.nav {
+  text-align: center;
+  justify-content: center;
+  background-color: #87dcdc;
+}
+
+.logo{
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+}
+.bg-tr{
+  background: linear-gradient(to right, #27245f 0, #3c7dc1 100%);
+}
+.logo-txt{
+  font-weight: 500;
+  font-size: 35px;
+  --bs-text-opacity: 1;
+  color: rgba(255, 255, 255, 1) !important;
+}
+
+@media only screen and (max-width: 767px) {
+  .bg-blue{
+  background: linear-gradient(to right, #27245f 0, #3c7dc1 100%);
+  text-align: right;
+  margin-top:15px;
+  margin-bottom:-2px;
+  margin-left:-11px;
+  margin-right:-15px;
+  padding-right:15px;
+
+
+}
+.logo-txt{
+  font-size: 15px;
+}
+.navbar {
+    
+  padding: 5px 10px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  border-radius: 20px;
+  color: #ffffff;
+}
+}
+
+
+:host {
+  padding-top: 66px;
+}
