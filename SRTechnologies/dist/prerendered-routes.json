@@ -1,0 +1,16 @@
+{
+  "routes": [
+    "/",
+    "/about-us",
+    "/clients",
+    "/contact-us",
+    "/home",
+    "/layout",
+    "/layout/about-us",
+    "/layout/clients",
+    "/layout/contact-us",
+    "/layout/home",
+    "/layout/service",
+    "/service"
+  ]
+}
