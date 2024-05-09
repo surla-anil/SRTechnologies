@@ -1,32 +1,40 @@
-# Srtech
-
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.6.
-
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
 
 ## Further help
+# [Angular v17 Deploy To GitHub Pages using GitHub Actions CI/CD 
+- automated deployments CI/CD
+- using a single github repo
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+### Step 1: 
+- create a git repo, create a local folder for the repo, init (github commands)
 
+### Step 2: 
+- create a your Angular (v17) app & push to `main` branch 
 
-Mobile App Development
-Website Development
-UX/UI and Graphics Design
+### Step 3:
+- add the build script command in `package.json`
+
+`"build:prod": "ng build --configuration=production --base-href=/<repoName>/"`
+
+### Step 4:
+- adjust `oututPath` in `angular.json` (dist)
+
+### Step 5:
+- setup a personal acces token GH_TOKEN to use later (classic)
+
+### Step 6:
+- create a `main.yml` file in `.github/workflows/main.yml` at root level
+- refer to this project for placement and contents (adjust to match your project)
+
+*using prebuilt github actions by James Ives [github-pages-deploy-action](https://github.com/JamesIves/github-pages-deploy-action)
+
+### Step 7:
+- create a new branch only for the contents of the `dist` folder
+- erase everything apart fom the `dist` folder from that second branch and push the changes (I named my branch 'prod')
+- verify that your 'main' branch contains your entire app, while the second branch only has the contents of the `dist` folder
+
+### Step 8: 
+- go back to the 'main' branch and push -> this should trigger the workflow from the `main.yml` file
+
+### Step 9: 
+- setup github pages to use the second branch, the one that has only the contents of the `dist` folder
+
