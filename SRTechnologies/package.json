@@ -5,7 +5,7 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "build:prod": "ng build --prod --base-href=/SRTechnologies/",
+    "build:prod": "ng build --configuration=production --base-href=/SRTechnologies/",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "serve:ssr:srtech": "node dist/SRTechnologies/server/server.mjs"
